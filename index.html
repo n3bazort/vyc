@@ -743,12 +743,12 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         </div>
       </div>
       <div class="reel-media">
-          <figure class="on" data-i="0"><img src="assets/carta/plato-1-bolon.jpg" alt="Bolón mixto con queso derretido encima y longaniza al lado" loading="lazy"></figure>
-          <figure data-i="1"><img src="assets/carta/plato-2-desayuno.jpg" alt="Desayuno manabita con dos bolones, guiso de carne, huevos fritos y aguacate" loading="lazy"></figure>
-          <figure data-i="2"><img src="assets/carta/plato-3-tigrillo.jpg" alt="Tigrillo con pimientos y plátano verde sobre un paño amarillo" loading="lazy"></figure>
-          <figure data-i="3"><img src="assets/carta/plato-4-pizza.jpg" alt="Pizza de verde con jamón, champiñones y queso derretido" loading="lazy"></figure>
-          <figure data-i="4"><img src="assets/carta/plato-5-cafe.jpg" alt="Taza de café negro con patacones y seco de carne sobre madera" loading="lazy"></figure>
-          <figure data-i="5"><img src="assets/carta/plato-6-cocteles.jpg" alt="Dos cócteles de maracuyá con borde de ají y una rodaja de limón" loading="lazy"></figure>
+          <figure class="on" data-i="0"><img src="/assets/carta/plato-1-bolon.jpg" alt="Bolón mixto con queso derretido encima y longaniza al lado" loading="lazy"></figure>
+          <figure data-i="1"><img src="/assets/carta/plato-2-desayuno.jpg" alt="Desayuno manabita con dos bolones, guiso de carne, huevos fritos y aguacate" loading="lazy"></figure>
+          <figure data-i="2"><img src="/assets/carta/plato-3-tigrillo.jpg" alt="Tigrillo con pimientos y plátano verde sobre un paño amarillo" loading="lazy"></figure>
+          <figure data-i="3"><img src="/assets/carta/plato-4-pizza.jpg" alt="Pizza de verde con jamón, champiñones y queso derretido" loading="lazy"></figure>
+          <figure data-i="4"><img src="/assets/carta/plato-5-cafe.jpg" alt="Taza de café negro con patacones y seco de carne sobre madera" loading="lazy"></figure>
+          <figure data-i="5"><img src="/assets/carta/plato-6-cocteles.jpg" alt="Dos cócteles de maracuyá con borde de ají y una rodaja de limón" loading="lazy"></figure>
       </div>
     </div>
   </div>
@@ -802,9 +802,9 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div>
       </div>
       <div class="story-media">
-        <figure class="on" data-i="0"><img src="assets/terraza.jpg" alt="Patio interior con árboles, luces colgadas y mesas llenas de noche" loading="lazy" width="900" height="620"></figure>
-        <figure data-i="1"><img src="assets/fachada-noche.jpg" alt="Fachada de la cafetería iluminada de verde por la noche" loading="lazy" width="960" height="540"></figure>
-        <figure data-i="2"><img src="assets/musica-en-vivo.jpg" alt="Grupo de mariachi tocando en vivo bajo las palmeras del patio" loading="lazy" width="1280" height="853"></figure>
+        <figure class="on" data-i="0"><img src="/assets/terraza.jpg" alt="Patio interior con árboles, luces colgadas y mesas llenas de noche" loading="lazy" width="900" height="620"></figure>
+        <figure data-i="1"><img src="/assets/fachada-noche.jpg" alt="Fachada de la cafetería iluminada de verde por la noche" loading="lazy" width="960" height="540"></figure>
+        <figure data-i="2"><img src="/assets/musica-en-vivo.jpg" alt="Grupo de mariachi tocando en vivo bajo las palmeras del patio" loading="lazy" width="1280" height="853"></figure>
       </div>
     </div>
   </div>
@@ -845,7 +845,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <p>El bolón mixto de este lugar es el mejor que he probado.</p>
         <span class="rese-src">Google</span>
       </div>
-      <figure><img src="assets/galeria/g16-bolon-real.jpg" alt="Bolón mixto con huevos fritos" loading="lazy"></figure>
+      <figure><img src="/assets/galeria/g16-bolon-real.jpg" alt="Bolón mixto con huevos fritos" loading="lazy"></figure>
     </article>
     <article class="rese rev">
       <div class="rese-body">
@@ -857,7 +857,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <p>Un lugar para sentarte con calma, conversar a gusto y comer bien. Una apuesta segura.</p>
         <span class="rese-src">Google</span>
       </div>
-      <figure><img src="assets/galeria/g07-patio-dia.jpg" alt="El patio de día con las sombrillas de paja" loading="lazy"></figure>
+      <figure><img src="/assets/galeria/g07-patio-dia.jpg" alt="El patio de día con las sombrillas de paja" loading="lazy"></figure>
     </article>
     <article class="rese rev">
       <div class="rese-body">
@@ -869,7 +869,7 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
         <p>Carta súper grande y variedad de productos. Si vas en la noche, música en vivo.</p>
         <span class="rese-src">Google</span>
       </div>
-      <figure><img src="assets/galeria/g06-neon.jpg" alt="El letrero de neón Verde y Café" loading="lazy"></figure>
+      <figure><img src="/assets/galeria/g06-neon.jpg" alt="El letrero de neón Verde y Café" loading="lazy"></figure>
     </article>
   </div>
   <div class="rese-more rev">
@@ -949,10 +949,10 @@ var nav=document.getElementById('nav');
 
 /* el celular recibe una version ligera del mismo recorrido */
 var SMALL=matchMedia('(max-width: 900px), (pointer: coarse)').matches;
-var VIDEO_URL=SMALL?'assets/hero-scrub-mobile.mp4':'assets/hero-scrub.mp4';
+var VIDEO_URL=SMALL?'/assets/hero-scrub-mobile.mp4':'/assets/hero-scrub.mp4';
 var VIDEO_BYTES=SMALL?3715580:12995127;   /* DEPLOY STEP: tamanos reales */
-var POSTER_URL='assets/hero-poster.jpg';
-var ENDING_URL='assets/hero-ending.jpg';
+var POSTER_URL='/assets/hero-poster.jpg';
+var ENDING_URL='/assets/hero-ending.jpg';
 
 /* ---------- motas ---------- */
 (function motes(){
@@ -1251,8 +1251,8 @@ var FOTOS=[
 (function galeria(){
   var host=document.getElementById('mosaic'),html='';
   for(var i=0;i<FOTOS.length;i++){
-    html+='<button type="button" data-src="assets/galeria/'+FOTOS[i][0]+'" aria-label="Ver '+FOTOS[i][1]+'">'
-       +'<img src="assets/galeria/'+FOTOS[i][0]+'" alt="'+FOTOS[i][1]+'" loading="lazy"></button>';
+    html+='<button type="button" data-src="/assets/galeria/'+FOTOS[i][0]+'" aria-label="Ver '+FOTOS[i][1]+'">'
+       +'<img src="/assets/galeria/'+FOTOS[i][0]+'" alt="'+FOTOS[i][1]+'" loading="lazy"></button>';
   }
   host.innerHTML=html;
 })();
@@ -1355,12 +1355,12 @@ bv.addEventListener('error',function(){bvSeekBusy=false;bvPending=null;});
 var holdVid=makeHold(bvHolder,document.getElementById('labelVid'),function(hp){
   bvSeek(hp*(bv.duration||1));
 });
-document.getElementById('vposter').style.backgroundImage="url('assets/bolon-abre-poster.jpg')";
+document.getElementById('vposter').style.backgroundImage="url('/assets/bolon-abre-poster.jpg')";
 if('IntersectionObserver' in window){
   var bio=new IntersectionObserver(function(es){
     if(!es[0].isIntersecting)return;
     bio.disconnect();
-    fetch('assets/bolon-abre.mp4').then(function(r){return r.blob();}).then(function(b){
+    fetch('/assets/bolon-abre.mp4').then(function(r){return r.blob();}).then(function(b){
       bv.src=URL.createObjectURL(b);bv.load();
       bv.addEventListener('canplay',function(){bvReady=true;bvSeek(0);bvHolder.classList.add('ready');},{once:true});
     }).catch(function(){});
