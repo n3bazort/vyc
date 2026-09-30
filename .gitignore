@@ -2,3 +2,6 @@
 Thumbs.db
 *.tmp
 .vscode/
+
+node_modules/
+dist/
